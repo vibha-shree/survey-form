@@ -1,0 +1,102 @@
+* {
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(28, 29, 54, 0.9);
+  --color-green: #33af64;
+  --color-gray: ##495056;
+  --color-white: #f3f3f3;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+      125deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  text-align: center;
+}
+
+#title {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 25px;
+  margin: 5px 0;
+}
+
+#description {
+  color: white;
+  font-style: italic;
+  font-size: 18px;
+  margin: 20px 0 20px;
+}
+
+fieldset {
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  background: var(--color-darkblue-alpha);
+  border: none;
+  text-align: left;
+  padding: 40px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 700px;
+  height: 38px;
+  border-radius: 0.25rem;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: gray;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 20px;
+  height: 30px;
+  margin-right: 10px;
+}
+#feature {
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+#improvement {
+  display: flex;
+  flex-direction: column;
+}
+
+#comment {
+  align-items: left;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+#comments {
+  display: flex;
+  align-items: left;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin-bottom: 0.8rem;
+  width: 700px;
+}
+#submit {
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+}
